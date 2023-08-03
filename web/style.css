@@ -1,0 +1,869 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 30, 2022, 10:46:55 AM
+    Author     : KIM DUONG
+*/
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Mukta', sans-serif;
+}
+html, body {
+    width: 100%;
+}
+body{
+    background: url(https://pkmacbook.com/wp-content/uploads/2021/07/background-gradient-dep-va-doc_052411078.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.modal-backdrop {
+
+/*    position: inherit;*/
+}
+.dropleft .dropdown-toggle::before {
+    display: none;
+}
+
+row {
+    width: 100%;
+    height: 100%;
+}
+
+.actived{
+    background: #1E8AF9 !important;
+    color: #FFFF!important
+}
+a{
+    color: #BBB6C1;
+}
+a:hover{
+    text-decoration: none;
+    color: #FFFF
+}
+.content {
+
+    width: 98%;
+    /* min-height: 100vh; */
+    background: rgba(214, 214, 214, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    margin: 20px  10px 0px 10px;
+
+}
+
+.content-header{
+    width: 100%;
+    height: 7%;
+    background: rgba( 255, 255, 255, 0.1 );
+    /*box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius-top: 20px;
+    /*border-top: 1px solid rgba( 255, 255, 255, 0.18 );*/
+}
+
+.header-logo{
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/ 
+    padding: 1em;
+    border-right: solid 0.01em #C2CBD0;
+}
+.header-welcome{
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; 
+    padding: 1em;*/
+
+
+}
+
+.content-body{
+    /*background-color: red;*/
+
+    width: 100%;
+
+    /* height: 100%; */
+
+}
+
+.content-body .body-left{
+    /*background-color:yellow;*/ 
+    /*position: absolute;*/
+    width: 100%;
+    height: 80vh;
+
+
+}
+
+.body-left{
+    padding-top:50px;
+    /*box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);*/
+    /*background-color: #FFFF*/
+    /* border: solid 1px #C2CBD0; */
+}
+
+.content-body .body-right{
+    /* background-color:blue; */
+    width: 100%;
+    height: 100%;
+
+}
+
+.body-right{
+    /*z-index: -2;*/
+}
+
+
+
+.title {
+    width: 100%;
+
+    margin-top: 2vh;
+    /*     background-color:red */
+}
+
+
+.btn-booking{
+    font-size: 20px;
+    padding: 5px;
+    background-color: #F0D143;
+}
+
+.right_in{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: -999;
+    margin: 25px 5px;
+}
+
+.title-content{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 1vh;
+}
+.title-small{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C2CBD0;
+}
+
+.parking-list {
+
+    width: 100%;
+    height: 90%;
+
+    /* background-color:pink */
+    /*background-color: #FFFF*/
+}
+
+.lot-content{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+    background: #fff;
+    border-radius: 20px;
+}
+
+
+.zone-A{
+    position: relative;
+}
+.zone-A-content{
+    width: 100%;
+    height: 12vh;
+    /* background-color: green */
+}
+.zone-name-A{
+    text-align: center;
+    color:#C2CBD0;
+    position: absolute;
+    left: 20%;
+    top:1vh;
+    height:3vh;
+    z-index: 2;
+    width: 778px;
+    border: solid 1px #C2CBD0;
+}
+.zone-A-lot{
+    position: absolute;
+    top: 6vh;
+    left: 5vw;
+    margin: 0 auto;
+
+}
+.lot-A-detail{
+    border: 0;
+    background-color:#E5E5E5;
+    width: 3.5vw;
+    height: 4vh;
+    font-size: 10px!important;
+}
+
+.zone-B{
+    width: 100%;
+    height: 65vh;
+    /* background-color: orange; */
+    position: relative;
+}
+
+
+.zone-C{
+    width: 100%;
+    height: 65vh;
+    /* background-color: goldenrod */
+}
+
+.zone-B-left,.zone-C-left{
+    width: 100%;
+    height: 57vh;
+    /*background-color: pink;*/ 
+    position:relative;
+
+
+}
+.zone-C-left{
+    border-left: 1px solid #000;
+    padding-left: 15px;
+    margin-left: -12px;
+
+}
+
+.zone-B-right,.zone-C-right{
+    width: 100%;
+    height: 65vh;
+    /* background-color: greenyellow; */
+}
+
+.zone-B-name,.zone-C-name{
+    text-align: center;
+    position: absolute;
+    left: 2.5vw;
+    bottom: 10px;
+    color:#C2CBD0;
+    width: 30vw;
+    border: solid 1px #C2CBD0;
+    z-index: 2;
+}
+
+.zone-C-name{
+    left: 4vw;
+}
+
+.zone-B-lot-left,.zone-C-lot-right{
+    position: absolute;
+    left: 3vw;
+}
+.lot-B-detail{
+    border: 0;
+    background-color:#E5E5E5;
+    width: 3.5vw;
+    height: 25px;
+    font-size: 10px;
+}
+
+.zone-B-lot-right,.zone-C-lot-left{
+    position: absolute;
+    left: 4vw;
+}
+
+.line-B-left{
+    position: absolute;
+    width: 55vh;
+    height: 0px;
+    left: -6vw;
+    top: 30vh;
+    border: 1px solid #9e9c9c;
+    transform: rotate(90deg);
+
+}
+
+.line-B-right{
+    position: absolute;
+    width: 55vh;
+    height: 0px;
+    left: -10.5vw;
+    top: 30vh;
+    border: 1px solid #9e9c9c;
+    transform: rotate(90deg);
+}
+
+.line-C-left{
+    position: absolute;
+    width: 55vh;
+    height: 0px;
+    left: -10.5vw;
+    top: 30vh;
+    border: 1px solid #9e9c9c;
+    transform: rotate(90deg);
+}
+
+.line-C-right{
+    position: absolute;
+    width: 55vh;
+    height: 0px;
+    left: -6vw;
+    top: 30vh;
+    border: 1px solid #9e9c9c;
+    transform: rotate(90deg);
+}
+
+.div-menu{
+    padding-top: 100px;
+    margin-left: 10px;
+}
+
+.menu-detail{
+
+    padding: 0 5vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    border:0;
+    /*background-color: #FFFF;*/
+    border-radius: 5px;
+    transition: color 0.5s;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-right: 10px;
+    /*color: #FFFFFF;*/
+
+}
+
+.menu-detail:hover{
+    /*background-color: #1E8AF9;*/
+    /*color: #FFFF!important;*/
+    font-weight: 700;
+    transition: color 0.5s;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.icon {
+    font-size: 20px;
+}
+
+/* Booking */
+.booking-content {
+    /* background-color: red; */
+    height: 75vh;
+    width: 100%;
+}
+
+.booking-left{
+    /* background-color: blue; */
+    height: 68vh;
+    width: 100%;
+}
+
+.booking-right{
+    /* background-color: pink; */
+    height: 68vh;
+    width: 100%;
+}
+
+
+.car-detail{
+    border-radius: 30px;
+    height: 12vh;
+    width: 100%;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.2);
+    border: 1px solid #fff;
+}
+.car-img{
+    width: 75px;
+    height: 71px;
+    border-radius: 100px;
+    /* background-color: pink; */
+    margin-right: 5vh;
+}
+.car-name,.time{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.car-id,.time-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #8B7979;
+}
+.car-detail-item-left{
+    border-right: 1px solid #000;
+}
+
+.personal-detail-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+
+}
+
+.personal-detail{
+    margin-top: 5vh;
+    /*background-color: white;*/
+    height: 40vh;
+    width: 100%;
+    box-shadow: 5px 5px 2px  2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.form-control{
+    border:none;
+    border-bottom: 1px solid #000
+}
+
+.detail-parking-lot{
+    /*background-color: #FFF;*/
+    margin-top: 10px;
+    height: 25vh;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    position: relative;
+    box-shadow: 5px 5px 2px  2px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    border: 1px solid #fff;
+}
+.lot-choose{
+    position: absolute;
+    width: 10vw;
+    height: 15vh;
+    margin-top: 1vh;
+    left: 4vw;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+
+}
+.lot-infor{
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #ABA4A4;
+}
+.lot-infor-number{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+
+}
+
+
+.payment {
+    margin-top: 4vh;
+    /*background-color: #FFFF;*/
+    height: 37vh;
+    width: 100%;
+    box-shadow: 5px 5px 2px  2px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid #fff;
+
+}
+
+.pay-title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.payment-detail{
+    border-bottom: 1px solid #000;
+    margin: 2vh;
+}
+
+.payment-detail-info{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.payment-detail-value{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.button-pay{
+    position: absolute;
+    width: 15vh;
+    height: 37px;
+    left: 13vh;
+    bottom: 1vh;
+    border:none;
+    color: #FFF;
+    background: #5263F7;
+    transition:all 0.5s;
+}
+.button-pay:hover {
+    background: red;
+    transition:all 0.5s;
+}
+.footer{
+    width: 100%;
+    height: 12vh;
+    background-color: #FFF;
+    padding: 0 1em;
+    border-right: solid 0.01em #C2CBD0;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.25);
+    /* display: flex;
+    align-items: center;
+    text-align: center; */
+}
+
+
+.overview {
+    height: 5rem;
+    width: 18rem;
+    background-color: white;
+    margin-left: 3rem;
+    margin-bottom: 2.25rem;
+}
+
+.icon-center {
+    margin: auto;
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(50, 187, 255);
+}
+
+.textoverview-center {
+    margin: auto;
+}
+
+/* HOME PAGW */
+.homePage{
+    position: relative;
+
+}
+.logo-home-page{
+    /* background-color: #1E8AF9; */
+    height: 100px;
+    width: 100px;
+}
+.boder-rect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1E8AF9;
+    clip-path: circle(100vh at right 120vh );
+    z-index: -100;
+    /* transform: rotate(1deg); */
+}
+
+
+.btn-login-home-page{
+    background: #FFFFFF;
+    border: 3px solid #371F75;
+    width: 15vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 10px;
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.landing-page-title{
+    position: absolute;
+    left: 5vw;
+    top: 15vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 80px;
+    line-height: 155px;
+    /* identical to box height */
+    color: #333;
+}
+.landing-page-sologan{
+    position: absolute;
+    left: 5vw;
+    top: 20vh;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+}
+.landing-page-content{
+    position: absolute;
+    width: 30%;
+    left: 7vw;
+    top: 50vh;
+    font-size: 20px;
+}
+
+.home-page-img{
+    position: absolute;
+    right: 11vw;
+    top: 30vh;
+
+}
+
+.btn-warning{
+    position: absolute;
+    left: 10vw;
+    bottom: 10vh;
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+.btn-warning-booking{
+    display: inline-block;
+    padding: 5px 10px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(0,0,0,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    font-weight: bold;
+}
+.btn-warning-booking:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #FFFF;
+    transition: all 0.1s;
+}
+
+.login-btn-drop:hover{
+    color: #fff;
+    background-color: #000;
+}
+.logo-name:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.a-active:visited {
+    background: #1E8AF9 ;
+    color: #FFFF
+}
+.thead{
+    background: rgb(238,174,202);
+    background: linear-gradient(209deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 20px;
+}
+.proc{
+    background-color: #cdedff; 
+    padding: 10px; 
+    border-radius: 20px; 
+    margin-top: 10px
+}
+.acti{
+    background-color: #c8e6c9;
+    padding: 10px 25px; 
+    border-radius: 20px
+}
+.scrool{
+    border-color: black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: black;
+    overflow: hidden;overflow-y: scroll
+}
+
+.can{
+    background-color: #ffcdd2;
+    padding: 10px; 
+    border-radius: 20px
+}
+
+.login{
+    position: relative;
+    background: url(https://images.unsplash.com/photo-1568738009519-52d1bad47858?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.login-content{
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    left: 30%;
+    top: 25px;
+     background: rgba(214, 214, 214, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.signUp-content{
+    position: absolute;
+    width: 600px;
+    height: 500px;
+    left: 30%;
+    top: 150px;
+     background: rgba(214, 214, 214, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+.glass-button{
+     display: inline-block;
+  padding: 24px 32px;
+  border: 0;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(30px);
+  color: rgba(255,255,255,0.8);
+  font-size: 14px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.glass-button:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+@media screen and (min-width: 1600px) {
+    .line-B-left{
+        position: absolute;
+        width: 55vh;
+        height: 0px;
+        left: -7vw;
+        top: 27vh;
+        border: 1px solid #9e9c9c;
+        transform: rotate(90deg);
+    }
+
+    .line-B-right{
+        position: absolute;
+        width: 55vh;
+        height: 0px;
+        left: -11vw;
+        top: 27vh;
+        border: 1px solid #9e9c9c;
+        transform: rotate(90deg);
+    }
+
+    .line-C-left{
+        position: absolute;
+        width: 55vh;
+        height: 0px;
+        left: -11vw;
+        top: 27vh;
+        border: 1px solid #9e9c9c;
+        transform: rotate(90deg);
+    }
+
+    .line-C-right{
+        position: absolute;
+        width: 55vh;
+        height: 0px;
+        left: -7vw;
+        top: 27vh;
+        border: 1px solid #9e9c9c;
+        transform: rotate(90deg);
+    }
+}
+
+
+
+
+/*-----Loading------*/
+
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 5;
+    background-color: #DDEDFD;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0.9;
+}
+.loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border: 5px solid #000;
+    animation: loader 2s infinite ease;
+}
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% { transform: rotate(0deg);}
+    25% { transform: rotate(180deg);}
+    50% { transform: rotate(180deg);}
+    75% { transform: rotate(360deg);}
+    100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+    0% { height: 0%;}
+    25% { height: 0%;}
+    50% { height: 100%;}
+    75% { height: 100%;}
+    100% { height: 0%;}
+}
+/*asa*/
+
+
+
+
